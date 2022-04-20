@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BaseDeDatosLocales.Views.FormularioPage">
+    <ContentPage.Content>
+        <StackLayout>            
+            <Entry Placeholder="id"
+                   x:Name="txtId"/>
+            
+            <Entry Placeholder="Nombre"
+                   x:Name="txtnombre"/>
+            
+            <Entry Placeholder="Apellidos"
+                   x:Name="txtapellido"/>
+            
+            <Entry Placeholder="Edad"
+                   x:Name="txtedad"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Agregar" Clicked="Insertar"/>
+                <Button Text="Editar" Clicked="Actualizar"/>
+                <Button Text="Eliminar" Clicked="Eliminar"/>
+                <Button Text="Buscar Uno" Clicked="BuscarUno"/>
+                <Button Text="Buscar todo" Clicked="BuscarTodo"/>
+            </StackLayout>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
